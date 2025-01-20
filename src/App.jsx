@@ -3,6 +3,7 @@ import TabNavigation from "./components/TabNavigation";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import './style/index.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('Home')
@@ -24,9 +25,11 @@ function App() {
   return (
     <div>
 
-<TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
+    <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
+
       {/* Konten berdasarkan tab */}
-      <div className="mt-20px bg-gradient-to-t from-[#2A174D] to-[#401069] h-screen">
+      <div className="">
+
         {renderContent()}
       </div>
 

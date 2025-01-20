@@ -1,0 +1,62 @@
+.absolute-bg {
+    position: absolute;
+    top: 40vh !important;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+
+.bg-shape1{
+  width: 40vh;
+  height: 40vh;
+  border-radius: 9999px;
+  position: relative;
+  animation: one 10s infinite;
+  
+}
+.bg-shape2{
+  width: 10vh;
+  height: 10vh;
+  border-radius: 9999px;
+  position: relative;
+  animation: two 10s infinite;
+
+}
+
+
+@keyframes one {
+  0% { left: 0vh; top: 0vh; }
+  10% { left: -10vh; top: -10vh; }
+  20% { left: -20vh; top: -20vh; }
+  30% { left: -30vh; top: -30vh; }
+  40% { left: -40vh; top: -40vh; }
+  50% { left: -40vh; top: -30vh; }
+  60% { left: -30vh; top: -20vh; }
+  70% { left: -20vh; top: -10vh; }
+  80% { left: -10vh; top: 0vh; }
+  90% { left: -5vh; top: 0vh; }
+  100% { left: 0vh; top: 0vh; }
+}
+/* @keyframes two {
+  0% {left: 0px; top: 0px;}
+  25% {left: 50vh; top: 10px;}
+  50% {left: 100px; top: 50px;}
+  75% {left: 50px; top: 100px;}
+  100% {left: 0px; top: 0px;}
+} */
+
+
+.bg-blur-bg{
+  filter: blur(120px);
+}
+.bg-primary-bg{
+  background-color: #ad5ef8;
+}
+.bg-teal-bg{
+  background-color: #7d30c5;
+}
+.bg-purple-bg{
+  background-color: rgb(109, 8, 109);
+}
