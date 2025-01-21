@@ -4,19 +4,19 @@ import PropTypes from 'prop-types'
 const TabNavigation = ({ activeTab, setActiveTab }) => {
     const getButtonClass = (tabName) => {
         return `px-10 py-6 text-md font-bold ${activeTab === tabName
-            ? 'text-[#5C27D4] text-lg '
-            : 'text-[#5C27D4] hover:text-[#7B51DB]'
+            ? 'text-white text-lg '
+            : 'text-white hover:text-[#7B51DB]'
         }`;
     };
 
     const tabs = ['Home', 'About', 'Resume', 'Projects'];
 
     return (
-        <div className='flex justify-between' style={{ background: 'white' }}>
+        <div className='flex justify-between  bg-black/20 bg-opacity-6 backdrop-filter backdrop-blur-lg' style={{ background: '#0D1117' }}>
            
             <div className='flex-1 flex justify-start '>
                 {/* Kolom kedua, isi sesuai kebutuhan */}
-                <div className='px-16 py-6'>
+                <div className='text-white px-16 py-6'>
                     <h1>hsjahjshjah</h1>
                 </div>
             </div>
