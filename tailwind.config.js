@@ -10,10 +10,12 @@ export default {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       fontFamily:{
-        'homemade-apple': ['"Homemade Apple"', 'cursive'],
+        'homemade-apple': ['Homemade Apple', 'cursive'],
         'quick-sand': ['Quicksand'],
         'roboto': ['Roboto'],
         'poppins': ['Poppins'],
+        'inter': ['Inter', 'sans-serif'],
+        'space-mono': ['Space Mono']
       },
       opacity:{
         '2': '0.02',
@@ -80,6 +82,6 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
 

@@ -1,41 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
 import TabNavigation from "./components/TabNavigation";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import './style/index.css';
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+import "./style/index.css";
 
 function App() {
-  const [activeTab, setActiveTab] = useState('Home')
-
-  //render kontent berdasarkan tab
-  const renderContent = () => {
-    switch (activeTab) {
-      case 'Home':
-        return <Home />
-      case 'About':
-        return <About />
-      case 'Contact':
-        return <Contact />
-      default:
-        return <Home />
-    }
-  }
-
   return (
-    <div>
+    <div
+      className="relative  min-h-screen w-full overflow-hidden animated-gradient"
+      style={{
+        backgroundColor: "#0D1117",
+      }}
+    >
+      {/* Navigation */}
+      <TabNavigation />
 
-    <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      {/* Konten berdasarkan tab */}
-      <div className="">
+        <div id="Home" className="pl-16 pr-16 pt-40 lg:pt-0">
+          <Home />
+        </div>
+        <div id="About" className="pl-16 pr-16 pt-8">
+          <AboutMe />
+        </div>
+        <div id="Projects" className="pl-16 pr-16 pt-8">
+          <Projects />
+        </div>
+        <div id="Skills" className="pl-16 pr-16 pb-8">
+          <Skills />
+        </div>
 
-        {renderContent()}
+      <div id="Contact" >
+        <Footer />
       </div>
-
-     
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

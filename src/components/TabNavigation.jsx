@@ -1,49 +1,114 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from "react";
 
-const TabNavigation = ({ activeTab, setActiveTab }) => {
-    const getButtonClass = (tabName) => {
-        return `px-10 py-6 text-md font-bold ${activeTab === tabName
-            ? 'text-white text-lg '
-            : 'text-white hover:text-[#7B51DB]'
-        }`;
-    };
+const TabNavigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const tabs = ['Home', 'About', 'Resume', 'Projects'];
+  // Fungsi untuk scroll ke elemen dengan ID tertentu
+  const handleTabClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMenuOpen(false); // Tutup menu setelah klik
+  };
 
-    return (
-        <div className='flex justify-between  bg-black/20 bg-opacity-6 backdrop-filter backdrop-blur-lg' style={{ background: '#0D1117' }}>
-           
-            <div className='flex-1 flex justify-start '>
-                {/* Kolom kedua, isi sesuai kebutuhan */}
-                <div className='text-white px-16 py-6'>
-                    <h1>hsjahjshjah</h1>
-                </div>
-            </div>
-            <div className='flex-1 flex justify-between'>
-                {tabs.map((tab) => (
-                    <button
-                        key={tab}
-                        className={getButtonClass(tab)}
-                        onClick={() => setActiveTab(tab)}>
-                        {tab}
-                    </button>
-                ))}
-            </div>
-            <div className='flex-1 flex justify-end '>
-                {/* Kolom kedua, isi sesuai kebutuhan */}
-                <div className='px-16 py-6'>
-                    <h1>hsjahjshjah</h1>
-                </div>
-            </div>
+  return (
+    <nav className="bg-[#0D1117] p-8 fixed top-0 w-full z-50">
+      {/* Desktop Navigation */}
+      <div className="flex justify-between px-24 ">
+        <h1 className="hidden text-white/95 drop-shadow-[0_0_1px_#AB01FF] font-bold text-3xl md:block">Portofolio</h1>
+        <div className="hidden md:flex justify-center space-x-8">
+          <button
+            onClick={() => handleTabClick("Home")}
+            className="text-white font-bold hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => handleTabClick("About")}
+            className="text-white font-bold hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+          >
+            About
+          </button>
+          <button
+            onClick={() => handleTabClick("Projects")}
+            className="text-white font-bold hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+          >
+            Projects
+          </button>
+          <button
+            onClick={() => handleTabClick("Skills")}
+            className="text-white font-bold hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+          >
+            Skills
+          </button>
+          <button
+            onClick={() => handleTabClick("Contact")}
+            className="text-white font-bold hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+          >
+            Contact
+          </button>
         </div>
-    );
-}
+      </div>
 
 
-TabNavigation.propTypes = {
-    activeTab: PropTypes.string.isRequired,
-    setActiveTab: PropTypes.func.isRequired,
+      {/* Mobile Navigation */}
+      <div className="flex items-center justify-between md:hidden">
+        <button
+          className="text-white text-2xl focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Dropdown Menu for Mobile */}
+      {isMenuOpen && (
+        <ul className="bg-[#13131A] flex-col items-center space-y-4 mt-4 md:hidden">
+          <li>
+            <button
+              onClick={() => handleTabClick("Home")}
+              className="text-white  hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+            >
+              Home
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleTabClick("About")}
+              className="text-white hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+            >
+              About
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleTabClick("Projects")}
+              className="text-white hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+            >
+              Projects
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleTabClick("Skills")}
+              className="text-white hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+            >
+              Skills
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleTabClick("Contact")}
+              className="text-white hover:text-[#D681F4] hover:drop-shadow-[0_0_5px_#AB01FF]"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+      )}
+    </nav>
+  );
 };
 
 export default TabNavigation;

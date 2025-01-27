@@ -7,17 +7,24 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postcss": "postcss src/style/index.css -o src/style/output.css"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.1.1",
     "aos": "^2.3.4",
+    "icons": "^1.0.0",
+    "lucide-react": "^0.473.0",
+    "postcss-cli": "^11.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
     "react-simple-typewriter": "^5.0.1",
     "react-typed": "^2.0.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
