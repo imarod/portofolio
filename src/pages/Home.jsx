@@ -15,14 +15,14 @@ const Home = () => {
   return (
     <div>
       {/* Content Container */}
-      <div id="Home" className="relative z-10 container mx-auto px-6 sm:px-12 lg:px-14 min-h-screen w-full">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 min-h-screen">
+      <div id="Home" className="relative z-10 mb-8 container mx-auto px-6 sm:px-12 lg:px-14 lg:min-h-screen w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-8  lg:min-h-screen">
           {/* Div untuk Teks */}
-          <div className="flex-1 justify-center text-center lg:text-left" data-aos="fade-up">
-            <h1 className="font-space-mono text-2xl sm:text-4xl md:text-4xl lg:text-5xl mt-8 lg:mt-[-11vh] mb-4 font-bold text-white">
+          <div className="flex-1 justify-center text-center mb-16 lg:text-left" data-aos="fade-up">
+            <h1 className="font-space-mono text-2xl  md:text-4xl lg:text-5xl mt-8 lg:mt-[-11vh] mb-4 font-bold text-white">
               Hello, I'm <span>Dyah</span>
             </h1>
-            <h1 className="text-4xl font-space-mono lg:text-4xl font-bold text-white">
+            <h1 className="text-2xl md:text-4xl font-space-mono lg:text-5xl font-bold text-white">
               I'm a{" "}
               <span className="relative text-[#E58FFF]/95 font-space-mono">
                 <Typewriter

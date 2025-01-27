@@ -19,16 +19,16 @@ function App() {
       <TabNavigation />
 
 
-        <div id="Home" className="pl-16 pr-16 pt-40 lg:pt-0">
+        <div id="Home" className="pl-8 pr-8 pt-32 lg:pt-0">
           <Home />
         </div>
-        <div id="About" className="pl-16 pr-16 pt-8">
+        <div id="About" className="pl-8 pr-8 pt-8">
           <AboutMe />
         </div>
-        <div id="Projects" className="pl-16 pr-16 pt-8">
+        <div id="Projects" className="pl-8 pr-8 pt-8">
           <Projects />
         </div>
-        <div id="Skills" className="pl-16 pr-16 pb-8">
+        <div id="Skills" className="pl-8 pr-8 pb-8">
           <Skills />
         </div>
 

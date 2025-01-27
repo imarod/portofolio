@@ -15,7 +15,7 @@ const TabNavigation = () => {
   return (
     <nav className="bg-[#0D1117] p-8 fixed top-0 w-full z-50">
       {/* Desktop Navigation */}
-      <div className="flex justify-between px-24 ">
+      <div className="flex justify-between px-14 ">
         <h1 className="hidden text-white/95 drop-shadow-[0_0_1px_#AB01FF] font-bold text-3xl md:block">Portofolio</h1>
         <div className="hidden md:flex justify-center space-x-8">
           <button
@@ -54,6 +54,7 @@ const TabNavigation = () => {
 
       {/* Mobile Navigation */}
       <div className="flex items-center justify-between md:hidden">
+      <h1 className="block text-white/95 drop-shadow-[0_0_1px_#AB01FF] font-bold text-3xl lg:hidden">Portofolio</h1>
         <button
           className="text-white text-2xl focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
