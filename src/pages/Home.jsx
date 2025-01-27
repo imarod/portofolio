@@ -49,6 +49,7 @@ const Home = () => {
                 src="h.PNG"
                 alt="Tech icons around laptop"
                 className="max-w-full h-auto relative z-10 animate-float"
+                loading="lazy"
               />
             </div>
           </div>

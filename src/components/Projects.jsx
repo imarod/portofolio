@@ -132,6 +132,7 @@ const Projects = () => {
                                                             src={tool}
                                                             alt={`Tools ${index + 1}`}
                                                             className="max-h-10 w-auto" 
+                                                            loading="lazy"
                                                             />
                                                         ))}
                                                       
@@ -151,6 +152,7 @@ const Projects = () => {
                                                         src={project.image}
                                                         alt={project.title}
                                                         className="object-cover"
+                                                        loading="lazy"
                                                     />
                                                 </div>
                                             </div>

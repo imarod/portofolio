@@ -46,6 +46,7 @@ const AboutMe = () => {
               className="w-32 h-auto md:w-[15rem] md:h-auto mx-auto md:pl-8"
               src="me.png"
               alt="me"
+              loading="lazy"
             />
             <div className="flex-[2] text-white text-center px-4 md:pr-8">
               <p className="text-base text-md lg:text-lg mb-6 md:mb-8">
