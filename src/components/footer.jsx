@@ -3,7 +3,7 @@ import { Mail, Linkedin, Github, CastleIcon as ChessKnight } from "lucide-react"
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#13131a] py-12">
-      <div className="container relative px-4 md:px-6">
+      <div className="container relative px-4 md:px-16">
         <div className="grid gap-4 md:grid-cols-2">
           <div className="space-y-4">
             <h2 className="text-2xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
