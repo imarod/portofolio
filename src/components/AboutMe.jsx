@@ -18,7 +18,7 @@ const AboutMe = () => {
           &lt; About Me /&gt;
         </h1>
 
-        <div className="group border border-[#30363d] relative rounded-3xl  pt-8 bg-[#13131a] hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out">
+        <div className="group border border-[#30363d] relative rounded-3xl  pt-8 hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out">
           {/* Top left corner */}
           <div className="absolute top-0 left-0 w-24 h-24 ">
             <div className="absolute top-0 left-0 w-1 h-12  transition-all duration-300 group-hover:translate-y-[-30px] group-hover:translate-x-[-30px] group-hover:drop-shadow-[0_0_10px_#D0B4F8] group-hover:bg-[#cb6cf7]"></div>

@@ -16,7 +16,7 @@ const Skills = () => {
           {/* Grid layout for responsive columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {/* Card 1 */}
-            <div className="flex flex-col justify-between group border border-[#30363d] relative rounded-3xl p-8 bg-[#13131a] hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out h-full text-left">
+            <div className="flex flex-col justify-between group border border-[#30363d] relative rounded-3xl p-8  hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out h-full text-left">
               <div className="text-white  pb-4 ">
                 <h1 className="text-3xl font-bold mb-4">Programming</h1>
                 <ol className="text-left space-y-2">
@@ -33,7 +33,7 @@ const Skills = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="flex flex-col justify-between  group border border-[#30363d] relative rounded-3xl p-8 bg-[#13131a] hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out h-full ">
+            <div className="flex flex-col justify-between  group border border-[#30363d] relative rounded-3xl p-8  hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out h-full ">
               <div className="text-white ">
                 <h1 className="text-3xl font-bold mb-4">Soft Skills</h1>
                 <ol className="text-left space-y-2">
@@ -47,7 +47,7 @@ const Skills = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="flex flex-col justify-between  group border border-[#30363d] relative rounded-3xl p-8 bg-[#13131a] hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="flex flex-col justify-between  group border border-[#30363d] relative rounded-3xl p-8  hover:bg-[#1a1a23] hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="text-white ">
                 <h1 className="text-3xl font-bold mb-4">Tools</h1>
                 <ol className=" space-y-2">
