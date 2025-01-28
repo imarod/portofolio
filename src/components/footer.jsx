@@ -3,22 +3,9 @@ import { Mail, Linkedin, Github, CastleIcon as ChessKnight } from "lucide-react"
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#13131a] py-12">
-      {/* Animated background dots */}
-      <div className="absolute inset-0 grid grid-cols-6 gap-4 opacity-10">
-        {[...Array(24)].map((_, i) => (
-          <div
-            key={i}
-            className="aspect-square w-2 rounded-full bg-primary animate-pulse"
-            style={{
-              animationDelay: `${i * 0.1}s`,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-          />
-        ))}
-      </div>
+      
 
-      <div className="container relative px-4 md:px-16">
+      <div className="container relative px-16">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-4">
             <h2 className="text-2xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
