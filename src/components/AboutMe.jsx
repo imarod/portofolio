@@ -57,7 +57,7 @@ const AboutMe = () => {
 
               <button className="px-6 py-2 text-white bg-[#A208E1] hover:drop-shadow-[0_0_10px_#AB01FF] text-base md:text-lg rounded-md">
               <a
-                href="CV_RODHIYATI.pdf"
+                href="CV_RODHIYATI MARDHIYYAH.pdf"
                 download="CV Rodhiyati Mardhiyyah"
               >
                 Download CV
